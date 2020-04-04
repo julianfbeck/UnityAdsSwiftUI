@@ -13,6 +13,7 @@
 		9A8173FE2438C7B1009D4C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A8173FD2438C7B1009D4C50 /* Assets.xcassets */; };
 		9A8174012438C7B1009D4C50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A8174002438C7B1009D4C50 /* Preview Assets.xcassets */; };
 		9A8174042438C7B1009D4C50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A8174022438C7B1009D4C50 /* LaunchScreen.storyboard */; };
+		9A8174122438C83D009D4C50 /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8174102438C82C009D4C50 /* UnityAds.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9A8174002438C7B1009D4C50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9A8174032438C7B1009D4C50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A8174052438C7B1009D4C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A8174102438C82C009D4C50 /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A8174122438C83D009D4C50 /* UnityAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			children = (
 				9A8173F62438C7B0009D4C50 /* UnityAddTestApp */,
 				9A8173F52438C7B0009D4C50 /* Products */,
+				9A8174102438C82C009D4C50 /* UnityAds.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -288,6 +292,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"UnityAddTestApp/Preview Content\"";
 				DEVELOPMENT_TEAM = VB9VC9U9AV;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = UnityAddTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -308,6 +316,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"UnityAddTestApp/Preview Content\"";
 				DEVELOPMENT_TEAM = VB9VC9U9AV;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = UnityAddTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

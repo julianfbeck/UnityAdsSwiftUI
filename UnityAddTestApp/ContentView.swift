@@ -1,21 +1,50 @@
-//
-//  ContentView.swift
-//  UnityAddTestApp
-//
-//  Created by Julian Beck on 04.04.20.
-//  Copyright © 2020 Julian Beck. All rights reserved.
-//
 
 import SwiftUI
+import UIKit
+import UnityAds
 
-struct ContentView: View {
-    var body: some View {
-        Text("Hello, World!")
+final class Interstitial:NSObject, UnityAdsDelegate{
+    override init() {
+        super.init()
+        UnityAds.initialize("Your ID", delegate: self, testMode: true)
     }
+    
+    func unityAdsReady(_ placementId: String) {
+        
+    }
+    
+    func unityAdsDidError(_ error: UnityAdsError, withMessage message: String) {
+        
+    }
+    
+    func unityAdsDidStart(_ placementId: String) {
+        
+    }
+    
+    func unityAdsDidFinish(_ placementId: String, with state: UnityAdsFinishState) {
+        
+    }
+    
+    func showAd(){
+        let root = UIApplication.shared.windows.first?.rootViewController
+        UnityAds.show(root!, placementId: "video")
+    }
+
+
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+struct ContentView:View{
+    var interstitial:Interstitial
+    
+    init(){
+        self.interstitial = Interstitial()
+    }
+    
+    var body : some View{
+        Button(action: {self.interstitial.showAd()}){
+          Text("My Button")
+        }
+
+      
     }
 }
